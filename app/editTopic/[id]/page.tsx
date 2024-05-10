@@ -26,7 +26,7 @@
 //   return <EditForm id={id} newTitle={title} description={description} />;
 // }
 
-import EditForm from "@/components/EditForm";
+import EditForm from "@/components/CustomEditForm";
 
 const getBlogById = async (id: any) => {
   try {
