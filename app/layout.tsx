@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
+import ToastProvider from "@/providers/ToastProvider";
 
 const inter = Lexend({ subsets: ["latin"] });
 
@@ -20,7 +21,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="max-w-3xl mx-auto p-4">
           <Header />
-          <div className="mt-8">{children}</div>
+          <div className="mt-8">
+            <ToastProvider />
+            {children}
+          </div>
         </div>
       </body>
     </html>
