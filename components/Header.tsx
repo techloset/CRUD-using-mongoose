@@ -7,7 +7,7 @@ export default function Header() {
         Techloset Solution's
       </Link>
       <Link className="bg-white p-2 rounded-xl" href="/addTopic">
-        Add Topic
+        Add Blog
       </Link>
     </nav>
   );

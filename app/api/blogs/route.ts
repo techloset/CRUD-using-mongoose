@@ -2,7 +2,7 @@ import connectMongoDB from "@/libs/mongoDb";
 import Blog from "@/models/blog";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request) {
   const { title, description } = await req.json();
   await connectMongoDB();
   await Blog.create({ title, description });
