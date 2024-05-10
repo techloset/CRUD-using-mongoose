@@ -17,3 +17,13 @@ export async function GET() {
   const blogs = await Blog.find();
   return NextResponse.json(blogs);
 }
+
+export async function DELETE(req: NextRequest) {
+  const id = req.nextUrl.searchParams.get("id");
+  await connectMongoDB();
+  await Blog.findByIdAndDelete(id);
+  return NextResponse.json(
+    { message: "Blog deleted successfully" },
+    { status: 200 }
+  );
+}
