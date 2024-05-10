@@ -2,7 +2,7 @@ import mongoose, { Schema } from "mongoose";
 
 const blogSchema = new Schema(
   {
-    blog: String,
+    title: String,
     description: String,
   },
   {
