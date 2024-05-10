@@ -8,7 +8,7 @@ export default function page() {
       <CustomInput type="text" placeholder="edit your Blog Title" />
       <CustomInput type="text" placeholder="Blog your Description" />
 
-      <CustomButton title="Edit your Blog" />
+      <CustomButton title="Edit your blog" />
     </form>
   );
 }
