@@ -13,7 +13,7 @@ const CustomInput: React.FC<InputProps> = ({
 }) => {
   return (
     <input
-      className="border border-slate-500 rounded-md px-8 py-2"
+      className="border border-slate-500 rounded-md px-8 py-2 h-fit"
       type={type}
       placeholder={placeholder}
       value={value}

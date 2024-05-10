@@ -13,7 +13,13 @@ const CustomButton: React.FC<ButtonProps> = ({ title, type, isLoading }) => {
       type={type}
       disabled={isLoading}
     >
-      {isLoading ? <span className="Adding Blog"></span> : title}
+      {isLoading ? (
+        <span className="animate-spin rounded-full h-6 w-6 border-b-2 border-white">
+          Loading...
+        </span>
+      ) : (
+        title
+      )}
     </button>
   );
 };
